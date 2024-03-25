@@ -59,7 +59,7 @@ To use this implementation:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your_username/one-hidden-layer-nn-classification.git
+   git clone https://github.com/DuaaAlshareif/one-hidden-layer-nn-classification.git
 
 
 ### Files
@@ -81,8 +81,6 @@ The PCA folder contains implementations of the Principal Component Analysis algo
 ### Files
 
 - **PCA.py**: This file contains the implementation of the PCA algorithm. It includes functions for calculating principal components, transforming data, and reconstructing original features from reduced dimensions.
-
-- **PCA.py**: This file contains the implementation of the PCA algorithm. It includes functions for calculating principal components, transforming data, and reconstructing original features from reduced dimensions.
   
 - **PCA_CLASS.py**: The file contains the implementation of the same PCA algorithm by using class.
 
@@ -92,4 +90,4 @@ The PCA folder contains implementations of the Principal Component Analysis algo
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your_username/foundations-of-machine-learning.git
+   git clone https://github.com/duaaAslahreef/foundations-of-machine-learning.git
