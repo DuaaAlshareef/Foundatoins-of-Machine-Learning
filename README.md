@@ -205,7 +205,12 @@ To use `main.py`:
      python main.py
      ```
 
+## Usage for the NN-From-Scratch
 
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/DuaaAlshreef/foundations-of-machine-learning.git
 ***
 
 
@@ -247,4 +252,4 @@ To use the `PCA` class:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/duaaAslahreef/foundations-of-machine-learning.git
+   git clone https://github.com/DuaaAlshreef/foundations-of-machine-learning.git
