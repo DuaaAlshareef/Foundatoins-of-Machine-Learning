@@ -53,6 +53,43 @@ Gradient descent is a fundamental optimization algorithm used to minimize the lo
 - b2 <- b2 - alpha * dL_db2
 
 ## Usage
+## Summary: SimpleNN Class in model.py
+
+The `SimpleNN` class in `model.py` is a basic implementation of a neural network. Here's a summary of its main components and functionality:
+
+- **Initialization**: 
+  - The constructor `__init__` allows users to define the architecture of the neural network by specifying the number of input features (`h0`), neurons in the first hidden layer (`h1`), and neurons in the second hidden layer (`h2`).
+
+- **Forward Pass**:
+  - The `forward_pass` method performs the forward pass through the neural network, computing the activations of each layer.
+
+- **Backward Pass**:
+  - The `backward_pass` method computes the gradients of the cost function with respect to the parameters of the network during backpropagation.
+
+- **Parameter Update**:
+  - The `update` method updates the parameters of the network using the computed gradients and a specified learning rate (`alpha`).
+
+- **Prediction**:
+  - The `predict` method applies the trained network to make predictions on new data.
+
+### Usage
+
+To use the `SimpleNN` class, users need to:
+
+1. **Import**:
+   - Import the `SimpleNN` class from `model.py`.
+
+2. **Initialization**:
+   - Create an instance of `SimpleNN` by specifying the network architecture.
+
+3. **Training and Prediction**:
+   - Train the network using training data and labels, then make predictions on new data.
+
+### Requirements
+
+Ensure that the necessary dependencies, particularly `numpy`, are installed to utilize the numerical computations within the class effectively.
+
+---
 
 To use this implementation:
 
