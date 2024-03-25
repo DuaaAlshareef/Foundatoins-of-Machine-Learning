@@ -53,9 +53,8 @@ Gradient descent is a fundamental optimization algorithm used to minimize the lo
 - b2 <- b2 - alpha * dL_db2
 
 ## Usage
-## Summary:
 
-The `SimpleNN` class in `model.py` is a basic implementation of a neural network. Here's a summary of its main components and functionality:
+The `SimpleNN` class in `model.py` is a basic implementation of a neural network. Its main components and functionality:
 
 - **Initialization**: 
   - The constructor `__init__` allows users to define the architecture of the neural network by specifying the number of input features (`h0`), neurons in the first hidden layer (`h1`), and neurons in the second hidden layer (`h2`).
@@ -90,13 +89,7 @@ To use the `SimpleNN` class, users need to:
 Ensure that the necessary dependencies, particularly `numpy`, are installed to utilize the numerical computations within the class effectively.
 
 ---
-
-To use this implementation:
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/DuaaAlshareif/one-hidden-layer-nn-classification.git
+   
 
 # 2. **dataset.py**:
 
@@ -150,6 +143,7 @@ The `sigmoid.py` file in this repository contains implementations of the sigmoid
 
    ```python
    from sigmoid import sigmoid, d_sigmoid
+   from sigmoid import *
 
 # 4.  **evaluations.py**:
 
@@ -172,13 +166,13 @@ To use the evaluation functions:
 
    ```python
    from evaluations import loss, accuracy
-   or from evaluations import *
+   from evaluations import *
 
 
 
 # 5.  **main.py**:
 
-The `main.py` script in this repository manages the training, evaluation, and testing of a neural network using various modules and functionalities provided in other files. Here's an overview of what `main.py` does and how to use it:
+The `main.py` script in this repository ties everything together and manages the training, evaluation, and testing of a neural network using various modules and functionalities provided in other files. Here's an overview of what `main.py` does and how to use it:
 
 ### Importing Dependencies
 
@@ -227,9 +221,6 @@ The PCA folder contains implementations of the Principal Component Analysis algo
 - **PCA.py**: This file contains the implementation of the PCA algorithm. It includes functions for calculating principal components, transforming data, and reconstructing original features from reduced dimensions.
   
 - **PCA_CLASS.py**: The file contains the implementation of the same PCA algorithm by using class.
-# PCA Class
-
-The `PCA` class in this repository provides an implementation of Principal Component Analysis (PCA), a dimensionality reduction technique commonly used in machine learning and data analysis. Here's a summary of its main components and functionality:
 
 ### Functionality
 
