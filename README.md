@@ -66,7 +66,36 @@ To use this implementation:
 - **dataset.py**:
   
 - **sigmoid.py**:
-  
+
+The `sigmoid.py` file in this repository contains implementations of the sigmoid activation function and its derivative. These functions are commonly used in neural networks for introducing non-linearity into the model and computing gradients during backpropagation.
+
+### Functionality
+
+- **sigmoid(z)**:
+  - Computes the sigmoid activation function for the given input.
+  - Parameters:
+    - `z`: numpy array or scalar
+  - Returns:
+    - numpy array or scalar
+      - Result of applying the sigmoid function element-wise to the input.
+
+- **d_sigmoid(z)**:
+  - Computes the derivative of the sigmoid activation function for the given input.
+  - Parameters:
+    - `z`: numpy array or scalar
+  - Returns:
+    - numpy array or scalar
+      - Result of applying the derivative of the sigmoid function element-wise to the input.
+
+### Usage
+
+1. **Importing**:
+   - First, ensure that `sigmoid.py` is in your Python project directory.
+   - Then, you can import the functions into your Python script as follows:
+
+   ```python
+   from sigmoid import sigmoid, d_sigmoid
+
 - **evaluations.py**:
 
 
