@@ -139,7 +139,54 @@ The `sigmoid.py` file in this repository contains implementations of the sigmoid
 
 - **main.py**:
 
-  
+## Neural Network Training and Evaluation with main.py
+
+The `main.py` script in this repository orchestrates the training, evaluation, and testing of a neural network using various modules and functionalities provided in other files. Here's an overview of what `main.py` does and how to use it:
+
+### Importing Dependencies
+
+The script imports necessary modules and functions from other files within the repository:
+- `numpy` for numerical computations.
+- `train_test_split` function from `dataset.py` to split the data into training and testing sets.
+- `SimpleNN` class from `model.py` for creating and training the neural network.
+- `sigmoid` functions from `sigmoid.py` for implementing activation functions.
+- `evaluations` module for computing evaluation metrics such as loss and accuracy.
+- `trange` from `tqdm` for displaying progress bars during training.
+
+### Training and Testing
+
+The script performs the following steps:
+1. **Data Splitting**: Calls `train_test_split` to split the dataset into training and testing sets.
+2. **Neural Network Initialization**: Initializes a neural network using the `SimpleNN` class.
+3. **Training Loop**:
+   - Iterates over a specified number of epochs.
+   - Performs forward and backward passes through the neural network.
+   - Updates the parameters based on computed gradients using gradient descent.
+   - Optionally, prints the training and testing loss at certain intervals.
+4. **Evaluation**:
+   - Computes and prints the training and testing accuracies using the trained model.
+
+### Usage
+
+To use `main.py`:
+1. **Ensure Dependencies**:
+   - Make sure all necessary Python files (`dataset.py`, `sigmoid.py`, `evaluations.py`, `model.py`) are in the same directory as `main.py`.
+2. **Run the Script**:
+   - Simply execute `main.py` using Python:
+     ```
+     python main.py
+     ```
+
+### Summary
+
+`main.py` serves as the central script for training and evaluating the neural network model. It handles data preparation, model initialization, training, and evaluation, providing a streamlined approach to experimenting with neural networks.
+
+Feel free to modify the script or integrate it into your own projects to train and evaluate neural networks effectively.
+
+---
+*Note: Please make sure to appropriately cite or reference this repository if you use any part of it in your work.*
+
+
 ## PCA (Principal Component Analysis)
 
 The PCA folder contains implementations of the Principal Component Analysis algorithm, a widely used technique for dimensionality reduction and data visualization in machine learning. PCA helps in identifying patterns in data and reducing its complexity while preserving important information.
