@@ -139,9 +139,7 @@ The `sigmoid.py` file in this repository contains implementations of the sigmoid
 
 - **main.py**:
 
-## Neural Network Training and Evaluation with main.py
-
-The `main.py` script in this repository orchestrates the training, evaluation, and testing of a neural network using various modules and functionalities provided in other files. Here's an overview of what `main.py` does and how to use it:
+The `main.py` script in this repository manages the training, evaluation, and testing of a neural network using various modules and functionalities provided in other files. Here's an overview of what `main.py` does and how to use it:
 
 ### Importing Dependencies
 
@@ -177,14 +175,9 @@ To use `main.py`:
      python main.py
      ```
 
-### Summary
 
-`main.py` serves as the central script for training and evaluating the neural network model. It handles data preparation, model initialization, training, and evaluation, providing a streamlined approach to experimenting with neural networks.
+***
 
-Feel free to modify the script or integrate it into your own projects to train and evaluate neural networks effectively.
-
----
-*Note: Please make sure to appropriately cite or reference this repository if you use any part of it in your work.*
 
 
 ## PCA (Principal Component Analysis)
