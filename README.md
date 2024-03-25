@@ -14,7 +14,7 @@ This is an implementation of the forward pass for a one hidden layer neural netw
 
 ## Overview
 
-![Neural Network Architecture](neural_network_architecture.png)
+![Neural Network Architecture](https://www.nosco.ch/ai/ml/inc/img/neural_network.png)
 
 The neural network architecture consists of three layers:
 
