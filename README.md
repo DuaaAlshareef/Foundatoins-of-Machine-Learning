@@ -147,7 +147,6 @@ The script imports necessary modules and functions from other files within the r
 - `SimpleNN` class from `model.py` for creating and training the neural network.
 - `sigmoid` functions from `sigmoid.py` for implementing activation functions.
 - `evaluations` module for computing evaluation metrics such as loss and accuracy.
-- `trange` from `tqdm` for displaying progress bars during training.
 
 ### Training and Testing
 
@@ -187,6 +186,30 @@ The PCA folder contains implementations of the Principal Component Analysis algo
 - **PCA.py**: This file contains the implementation of the PCA algorithm. It includes functions for calculating principal components, transforming data, and reconstructing original features from reduced dimensions.
   
 - **PCA_CLASS.py**: The file contains the implementation of the same PCA algorithm by using class.
+# PCA Class
+
+The `PCA` class in this repository provides an implementation of Principal Component Analysis (PCA), a dimensionality reduction technique commonly used in machine learning and data analysis. Here's a summary of its main components and functionality:
+
+### Functionality
+
+- **Initialization**: 
+  - The constructor `__init__` initializes the PCA object with the desired number of principal components (`n_components`).
+  
+- **Fit Method**:
+  - The `fit` method computes the principal components from the input data matrix `X`. It calculates the mean, covariance matrix, eigenvalues, and eigenvectors, sorts them in descending order, and selects the top `n_components` for further analysis.
+  
+- **Transform Method**:
+  - The `transform` method projects the input data matrix `X` onto the principal components computed during the fitting process, providing a lower-dimensional representation of the data.
+
+### Usage
+
+To use the `PCA` class:
+
+1. **Initialization**:
+   - Create an instance of the `PCA` class by specifying the number of principal components:
+
+   ```python
+   pca = PCA(n_components=2)
 
 
 ## Usage
