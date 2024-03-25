@@ -143,7 +143,6 @@ The `sigmoid.py` file in this repository contains implementations of the sigmoid
 
    ```python
    from sigmoid import sigmoid, d_sigmoid
-   from sigmoid import *
 
 # 4.  **evaluations.py**:
 
@@ -166,7 +165,6 @@ To use the evaluation functions:
 
    ```python
    from evaluations import loss, accuracy
-   from evaluations import *
 
 
 
