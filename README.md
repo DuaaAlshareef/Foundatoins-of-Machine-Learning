@@ -8,7 +8,7 @@ This repository contains foundational algorithms and models commonly used in mac
 The NN-From-Scratch folder contains a basic implementation of a neural network from scratch using Python. This model serves as a foundation for understanding the fundamental concepts of neural networks, including forward propagation, backward propagation, and gradient descent.
 
 
-# Forward Pass for One Hidden Layer Neural Network (Classification)
+# Forward Pass for One Hidden Layer Neural Network
 
 This is an implementation of the forward pass for a one hidden layer neural network with the output layer for classification tasks. The forward pass is a fundamental step in neural network computation, where input data is propagated through the network to generate predictions.
 
@@ -26,7 +26,7 @@ The neural network architecture consists of three layers:
 # Backward Pass
 
 ## Overview
-![Neural Network Backward Pass](neural_network_backward_pass.png)
+![Neural Network Backward Pass](https://miro.medium.com/max/908/1*ahiviCqq6B0R_XWBmgvHkA.png)
 
 
 ## Implementation
