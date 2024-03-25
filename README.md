@@ -99,7 +99,27 @@ To use this implementation:
    git clone https://github.com/DuaaAlshareif/one-hidden-layer-nn-classification.git
 
 # 2. **dataset.py**:
-  
+
+The `dataset.py` file in this repository provides functions for generating synthetic data and splitting it into training and testing sets. Here's a summary of the provided functions:
+
+### Data Generation
+
+The `generate_data` function generates synthetic data with two classes, each having two-dimensional features. It creates clusters for each class with a specified variance and concatenates them to form the dataset. The data is shuffled randomly before returning.
+
+### Train-Test Split
+
+The `train_test_split` function splits the generated data into training and testing sets based on a specified ratio. It uses the generated data from `generate_data` and separates it into training and testing subsets according to the provided ratio.
+
+### Usage
+
+To use the dataset functions:
+
+1. **Import**:
+   - Import the `generate_data` and `train_test_split` functions from `dataset.py` into your Python script:
+
+   ```python
+   from dataset import generate_data, train_test_split
+
 # 3.  **sigmoid.py**:
 
 The `sigmoid.py` file in this repository contains implementations of the sigmoid activation function and its derivative. These functions are commonly used in neural networks for introducing non-linearity into the model and computing gradients during backpropagation.
@@ -132,6 +152,27 @@ The `sigmoid.py` file in this repository contains implementations of the sigmoid
    from sigmoid import sigmoid, d_sigmoid
 
 # 4.  **evaluations.py**:
+
+The `evaluations.py` file in this repository contains functions for evaluating machine learning models, including loss and accuracy calculations. Here's a summary of the provided functions:
+
+### Loss Calculation
+
+The `loss` function computes the cross-entropy loss between predicted labels (`y_pred`) and true labels (`Y`). It is commonly used in classification tasks to measure the difference between predicted probabilities and actual class labels.
+
+### Accuracy Calculation
+
+The `accuracy` function calculates the accuracy of a model's predictions. It compares predicted labels (`y_pred`) with true labels (`y`) and computes the proportion of correct predictions over the total number of samples.
+
+### Usage
+
+To use the evaluation functions:
+
+1. **Import**:
+   - Import the `loss` and `accuracy` functions from `evaluations.py` into your Python script:
+
+   ```python
+   from evaluations import loss, accuracy
+   or from evaluations import *
 
 
 
