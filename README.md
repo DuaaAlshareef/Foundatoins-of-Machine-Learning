@@ -17,8 +17,7 @@ This file contains the code for performing the forward and backward pass operati
    1. ## Forward Pass
 
       ## Overview
-
-![Neural Network Architecture](https://www.nosco.ch/ai/ml/inc/img/neural_network.png)
+       ![Neural Network Architecture](https://www.nosco.ch/ai/ml/inc/img/neural_network.png)
 
 This is a demonstration of the forward pass for a one-hidden-layer neural network with the output layer for classification tasks. The forward pass is a fundamental step in neural network computation, where input data is propagated through the network to generate predictions.
 
@@ -33,7 +32,7 @@ The neural network architecture consists of three layers:
 2. ## Backward Pass
 
       ## Overview
-![Neural Network Backward Pass](https://miro.medium.com/max/908/1*ahiviCqq6B0R_XWBmgvHkA.png)
+   ![Neural Network Backward Pass](https://miro.medium.com/max/908/1*ahiviCqq6B0R_XWBmgvHkA.png)
 
 Backpropagation is a core algorithm in neural network training, enabling adjustments of weights and biases to minimize prediction errors. It iteratively propagates errors backward through the network layers, using the chain rule of calculus to efficiently compute gradients. This process enables the optimization of network parameters via gradient descent, forming the foundation of modern deep learning frameworks and facilitating training of complex neural architectures for diverse machine learning tasks.
 
@@ -42,8 +41,7 @@ Backpropagation is a core algorithm in neural network training, enabling adjustm
    3. ## Gradient Descent: 
 
       ## Overview
-
-![Gradient Descent](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*qLSq-P_4iwNPWQTo.png)
+       ![Gradient Descent](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*qLSq-P_4iwNPWQTo.png)
 
 Gradient descent is a fundamental optimization algorithm used to minimize the loss function by iteratively adjusting the model parameters. In our context, we update the weights W1,W2,b1,b2 of a neural network for classification.
 
