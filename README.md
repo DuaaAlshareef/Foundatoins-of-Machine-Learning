@@ -9,15 +9,15 @@ The NN-From-Scratch folder contains a basic implementation of a neural network f
 
 ### Files:
 
-# - **model.py**:
+# 1. **model.py**:
 The implementation of the forward pass for the one hidden layer neural network can be found in the above file.
 
 This file contains the code for performing the forward and backward pass operations. It includes functions to compute the activations of the hidden layer and the output layer, given the input features and the model parameters, it also includes calculating the gradients of the functions to be used for gradient descent.
 
-   1. ## Forward Pass
+- ## Forward Pass
 
-      ## Overview
-       ![Neural Network Architecture](https://www.nosco.ch/ai/ml/inc/img/neural_network.png)
+  ## Overview
+   ![Neural Network Architecture](https://www.nosco.ch/ai/ml/inc/img/neural_network.png)
 
 This is a demonstration of the forward pass for a one-hidden-layer neural network with the output layer for classification tasks. The forward pass is a fundamental step in neural network computation, where input data is propagated through the network to generate predictions.
 
@@ -29,16 +29,16 @@ The neural network architecture consists of three layers:
 
 
 
-2. ## Backward Pass
+- ## Backward Pass
 
-      ## Overview
+   ## Overview
    ![Neural Network Backward Pass](https://miro.medium.com/max/908/1*ahiviCqq6B0R_XWBmgvHkA.png)
 
 Backpropagation is a core algorithm in neural network training, enabling adjustments of weights and biases to minimize prediction errors. It iteratively propagates errors backward through the network layers, using the chain rule of calculus to efficiently compute gradients. This process enables the optimization of network parameters via gradient descent, forming the foundation of modern deep learning frameworks and facilitating training of complex neural architectures for diverse machine learning tasks.
 
 
 
-   3. ## Gradient Descent: 
+   - ## Gradient Descent: 
 
       ## Overview
        ![Gradient Descent](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*qLSq-P_4iwNPWQTo.png)
@@ -53,7 +53,7 @@ Gradient descent is a fundamental optimization algorithm used to minimize the lo
 - b2 <- b2 - alpha * dL_db2
 
 ## Usage
-## Summary: SimpleNN Class in model.py
+## Summary:
 
 The `SimpleNN` class in `model.py` is a basic implementation of a neural network. Here's a summary of its main components and functionality:
 
@@ -98,11 +98,9 @@ To use this implementation:
    ```bash
    git clone https://github.com/DuaaAlshareif/one-hidden-layer-nn-classification.git
 
-
-### Files
-- **dataset.py**:
+# 2. **dataset.py**:
   
-- **sigmoid.py**:
+# 3.  **sigmoid.py**:
 
 The `sigmoid.py` file in this repository contains implementations of the sigmoid activation function and its derivative. These functions are commonly used in neural networks for introducing non-linearity into the model and computing gradients during backpropagation.
 
@@ -133,11 +131,11 @@ The `sigmoid.py` file in this repository contains implementations of the sigmoid
    ```python
    from sigmoid import sigmoid, d_sigmoid
 
-- **evaluations.py**:
+# 4.  **evaluations.py**:
 
 
 
-- **main.py**:
+# 5.  **main.py**:
 
 The `main.py` script in this repository manages the training, evaluation, and testing of a neural network using various modules and functionalities provided in other files. Here's an overview of what `main.py` does and how to use it:
 
