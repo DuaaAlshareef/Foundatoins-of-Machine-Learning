@@ -214,7 +214,6 @@ To use `main.py`:
 ***
 
 
-
 ## PCA (Principal Component Analysis)
 
 The PCA folder contains implementations of the Principal Component Analysis algorithm, a widely used technique for dimensionality reduction and data visualization in machine learning. PCA helps in identifying patterns in data and reducing its complexity while preserving important information.
@@ -253,3 +252,41 @@ To use the `PCA` class:
 
    ```bash
    git clone https://github.com/DuaaAlshreef/foundations-of-machine-learning.git
+
+
+
+
+
+***
+
+# K-Nearest Neighbors (KNN) Algorithm
+
+This repository contains Python implementations of the K-Nearest Neighbors (KNN) algorithm for classification tasks. The KNN algorithm is a simple and effective method for classification and regression tasks.
+
+## Files
+
+### KNN.py
+
+This file contains the implementation of the KNN algorithm. The `KNN` class provides methods for training the model, predicting labels for new data points, and evaluating the performance of the model.
+
+### dataset.py
+
+The `dataset.py` file includes functions for loading and preprocessing datasets. It provides functionalities to split the dataset into training and testing sets, as well as methods for normalizing or standardizing the data.
+
+### main.py
+
+`main.py` serves as the main entry point to demonstrate the usage of the KNN algorithm. It contains example code to load a dataset, train a KNN model, make predictions, and evaluate the model's performance.
+
+### operations.py
+
+This file contains auxiliary functions used in the KNN algorithm implementation, such as distance calculations and vote counting.
+
+## Usage
+
+To use the KNN algorithm for classification tasks:
+
+1. Ensure you have Python installed on your system.
+2. Clone this repository:
+
+```bash
+git clone https://github.com/your_username/KNN.git
