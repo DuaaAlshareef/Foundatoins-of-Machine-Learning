@@ -3,10 +3,10 @@ import numpy as np
 from dataset import *
 
 
-# """# KNN Implementation
-# ## Distance functions
-# ### Loops Implementaion
-# """
+# # """# KNN Implementation
+# # ## Distance functions
+# # ### Loops Implementaion
+# # """
 # def get_distance_with_loops(X_train,X_test):
 #   euc_dist=np.zeros((X_train.shape[0],X_test.shape[0]))
 #   for i in range(X_train.shape[0]):

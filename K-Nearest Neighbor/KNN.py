@@ -6,8 +6,8 @@ from operations import *
 class KnnClassifier:
   def __init__(self,k):
     self.k = k
-    # self.X_train= None
-    # self.y_train= None
+    self.X_train= None
+    self.y_train= None
 
   def fit(self, X_train, y_train):
     self.X_train= X_train
@@ -36,12 +36,7 @@ class KnnClassifier:
     accuracy = np.sum(y_pred == self.y_test) /m
     return accuracy
 
-# accuracy = []
-# for i in range(1, 50):
-#   knn = KnnClassifier(i)
-#   knn.fit(X_train,y_train)
-#   accuracy.append(knn.check_accuracy(X_test, y_test))
-# print(accuracy)
+
 
 
 
