@@ -1,4 +1,5 @@
 from sklearn.datasets import make_moons
+import numpy as np
 
 """# Data Generation"""
 
