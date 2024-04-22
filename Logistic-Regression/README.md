@@ -11,7 +11,7 @@ $$ \sigma(z) = \frac{1}{1 + e^{-z}} $$
 
 ## Files
 
-- `main.py`: This is the main script for training and evaluating logistic regression models. It contains the code to load datasets, initialize and train the logistic regression model, and evaluate its performance. 
+- `main.py`: This is the main script for training and evaluating logistic regression models. It contains the code to load datasets, initialize and train the model, and evaluate its performance. 
 
 - `model.py`: This file contains the implementation of the logistic regression model. The `LogisticRegression` class implements logistic regression for binary classification tasks. It includes methods for:
   - Adding bias terms to input features (`add_ones`).
