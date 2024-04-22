@@ -1,59 +1,46 @@
 import numpy as np
-
-
+from evaluations import cross_entropy_loss
 class LogisticRegression():
 
-  def __init__(self,lr,n_epochs):
-    self.lr = lr
-    self.n_epochs = n_epochs
-    self.train_losses = []
-    self.w = None
-    self.weight = []
+    def __init__(self):
+        self.w = None
 
-  def add_ones(self, x):
-    ones = np.ones((x.shape[0],1))
-    return np.hstack((ones,x))
+    def add_ones(self, X):
+        ones = np.ones((X.shape[0],1))
+        return np.hstack((ones,X))
 
-  def sigmoid(self, x):
-    z = x @ self.w
-    return 1/(1+np.exp(-z))
-
-  def cross_entropy(self, x, y_true):
-    y_pred = self.sigmoid(x)
-    loss = -np.mean(y_true * np.log(y_pred) + (1-y_true)* np.log(1-y_pred))
-    return loss
+    def sigmoid(self, X):
+        z = X @ self.w
+        return 1/(1+np.exp(-z))
 
 
-  def predict_proba(self,x):  
-    x=self.add_ones(x)
-    proba = self.sigmoid(x)
-    return proba
+    def predict_proba(self, X):  
+        X = self.add_ones(X)
+        proba = self.sigmoid(X)
+        return proba
 
-  def predict(self,x):
-    probas = self.predict_proba(x)
-    output = (probas>=0.5).astype(int)
-    return output
+    def predict(self, X):
+        probas = self.predict_proba(X)
+        output = (probas>=0.5).astype(int)
+        return output
+  
 
-  def fit(self,x,y):
+    def fit(self, X, y, lr= 0.1, n_epochs=10000):
 
-    x = self.add_ones(x)
-    y = y.reshape(-1,1)
+        X = self.add_ones(X)
+        y = y.reshape(-1,1)
 
-    self.w = np.zeros((x.shape[1],1))
+        self.w = np.zeros((X.shape[1],1))
 
-    for epoch in range(self.n_epochs):
-      y_pred = self.sigmoid(x)
+        for epoch in range(n_epochs):
+            y_pred = self.sigmoid(X)
 
-      grad = - (1/ x.shape[0]) * (x.T @ (y-y_pred))
+            grad = - (1/ X.shape[0]) * (X.T @ (y-y_pred))
 
-      self.w -= self.lr * grad
+            self.w -= lr * grad
 
-      loss = self.cross_entropy(x,y)
-      self.train_losses.append(loss)
+            loss = cross_entropy_loss(y,y_pred)
 
-      if epoch%1000 == 0:
-        print(f'loss for epoch {epoch}  : {loss}')
+            if epoch%1000 == 0:
+                print(f'loss for epoch {epoch}  : {loss}')
 
-  def accuracy(self,y_true, y_pred):
-    acc = np.mean(y_true.reshape(-1,1) == y_pred) * 100
-    return acc

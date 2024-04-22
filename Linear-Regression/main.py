@@ -9,11 +9,11 @@ model = LinearRegression(Xtrain, ytrain)
 
 losses = []
 num_epochs = 10
-for epoch in range(num_epochs): # Do some iterations
-    ypred = model.forward_pass()# make predictions with current parameters
-    loss = mean_squared_error(ytrain,ypred)# Compute mean squared error
-    grads = model.backward_pass()# compute gradients of loss wrt parameters
-    model.update_param()# Update your parameters with the gradients
+for epoch in range(num_epochs): 
+    ypred = model.forward_pass()
+    loss = mean_squared_error(ytrain,ypred)
+    grads = model.backward_pass()
+    model.update_param()
 
     losses.append(loss)
     print(f"\nEpoch {epoch}, loss {loss}")
