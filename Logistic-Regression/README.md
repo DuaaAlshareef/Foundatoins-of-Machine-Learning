@@ -9,8 +9,6 @@ The sigmoid function, also known as the logistic function, is a key component of
 $$ \sigma(z) = \frac{1}{1 + e^{-z}} $$
 
 
-![Sigmoid Function](https://raw.githubusercontent.com/Codecademy/docs/main/media/sigmoid-function.png)
-
 ## Files
 
 - `main.py`: This is the main script for training and evaluating logistic regression models. It contains the code to load datasets, initialize and train the logistic regression model, and evaluate its performance. 
