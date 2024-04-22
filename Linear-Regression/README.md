@@ -13,6 +13,7 @@ This repository contains the implementation of a simple linear regression model,
   - `forward_pass(self, X)`: Computes the forward pass of the model to generate predictions for input data `X`.
 
     The mathematical function for the linear regression hypothesis is computed as:
+    
   $$ \text{hypothesis} = X \cdot \theta $$
 
 
