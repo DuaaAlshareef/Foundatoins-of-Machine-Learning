@@ -42,7 +42,7 @@ $$ \sigma(z) = \frac{1}{1 + e^{-z}} $$
 1. Clone the repository:
     ```bash
     git clone https://github.com/DuaaAlshareef/Foundatoins-of-Machine-Learning.git
-    cd logistic-regression
+    cd Logistic-Regression
     ```
 
 
